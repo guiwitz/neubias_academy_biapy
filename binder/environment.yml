@@ -1,0 +1,35 @@
+name: biapy
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - numpy
+  - matplotlib
+  - scikit-image
+  - pandas
+  - ipyvolume
+  - pip
+  - voila
+  - itkwidgets
+  - jupyterlab
+  - nodejs
+  - scikit-learn
+  - rise
+  - pyjnius=1.2.0
+  - jupyter_contrib_nbextensions
+  - ipympl
+  - ipywidgets
+  - numba>=0.43.1
+  - pyimagej
+  - openjdk=8
+  - pip:
+    - napari
+    - trackpy
+    - tensorflow==1.15
+    - tqdm
+    - torch 
+    - torchvision
+    - mrc
+    - stardist
+    - cellpose
+    - aicsimageio
