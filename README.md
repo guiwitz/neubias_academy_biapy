@@ -3,7 +3,7 @@
 
 # NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter
 
-This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this cours is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
+This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this course is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
 
 ## Static notebooks
 
@@ -67,7 +67,7 @@ In order to run this course on your own computer you will have to:
    ```bash
    conda env create -f environment_minimal.yml
    ```
-   3. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Everytime** you want to use it, open a terminal and start Jupyter:
+   3. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Every time** you want to use it, open a terminal and start Jupyter:
    ```bash
    conda activate biapy
    ```
