@@ -9,6 +9,7 @@ dependencies:
   - pandas
   - ipyvolume
   - pip
+  - jupyter
   - jupyter_contrib_nbextensions
   - ipywidgets
   - pyimagej
