@@ -22,6 +22,8 @@ dependencies:
   - numba>=0.43.1
   - pyimagej
   - openjdk=8
+  - seaborn
+  - plotnine 
   - pip:
     - napari
     - trackpy
