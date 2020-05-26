@@ -4,11 +4,12 @@ import requests
 
 # Direct download from Zenodo
 if not os.path.exists('Data/'):
+    os.makedirs('Data/')
     url = 'https://zenodo.org/record/3856637/files/Data.zip?download=1'
-    urllib.request.urlretrieve(url, 'Data.zip')
+    urllib.request.urlretrieve(url, 'Data/Data.zip')
     #unzip
-    with zipfile.ZipFile('Data.zip', 'r') as zip_ref:
-        zip_ref.extractall()
+    with zipfile.ZipFile('Data/Data.zip', 'r') as zip_ref:
+        zip_ref.extractall('Data/')
     #os.remove(where_to_save+'BBBC007_v1_images.zip')
 
 '''
