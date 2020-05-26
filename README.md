@@ -3,12 +3,15 @@
 
 # NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter
 
-This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this course is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
+This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, filtering, object measurement etc., as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this course is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
+
+If some material is unclear or you discover errors, please post an issue on this repository. If you have more general questions related to image processing, please post them on the [image.sc](https://forum.image.sc/) forum. We will not provide support for such questions here.
 
 ## Table of contents
 
 - [NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter](#neubias-academy-home-interactive-bioimage-analysis-with-python-and-jupyter)
   - [Table of contents](#table-of-contents)
+  - [Companion material](#companion-material)
   - [Static notebooks](#static-notebooks)
   - [Running the notebooks interactively](#running-the-notebooks-interactively)
     - [On Binder](#on-binder)
@@ -17,6 +20,17 @@ This course is an introduction to bioimage processing with Python and Jupyter. I
   - [Additional technical information](#additional-technical-information)
     - [Turning a Q&A into an image.sc post](#turning-a-qa-into-an-imagesc-post)
     - [Automated conversion for Colab](#automated-conversion-for-colab)
+
+## Companion material
+
+This material comes as a complement to two webinars from the NEUBIAS Academy @Home series given on May 7th and 13th 2020 and available on Youtube [here](https://youtu.be/2KF8vBrp3Zw) and [here](https://www.youtube.com/watch?v=Y3pB3wnOivE). Those webinars give a general overview of the different parts of the Python/Jupyter ecosystem for bioimage analysis. In particular they describe:
+- Jupyter notebooks (what they are and how to use them)
+- the possibilities to use remote resources (Binder, Colab)
+- the main packages (Numpy, scikit-image etc.)
+- the principle of environments with a focus on conda
+- live coding demos with notebooks
+
+The presentation used during those webinars is also available as a Google slides [here](http://bit.ly/neubias_biapy).
 
 ## Static notebooks
 
