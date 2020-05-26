@@ -32,7 +32,7 @@ This is the preferred solution. This repository has been set-up to be run intera
 
 Alternatively, you can run these notebooks via Google Colab. To do that, click on the Colab badge in the top left corner of this document. This will bring you to the Colab service where you will be able to select a notebook to open. Note that if you *directly download* the notebooks from GitHub, you should select the **colab** branch instead of master.
 
-The dataset cannot be "pre-installed" for you on Colab, so you will have to download it to Google Drive either directly using [this link](https://zenodo.org/record/3786307/files/Data.zip?download=1) or by visiting the [Zendo repository](https://zenodo.org/record/3786307/#.XrEx4tP7RTY) of the course. Unzip the Data.zip file and **place the ```Data``` folder at the very top of your Google Drive folder tree**. The latter is important to ensure that image import commands in the notebooks work as expected.
+The dataset cannot be "pre-installed" for you on Colab, so you will have to download it to Google Drive either directly using [this link](https://zenodo.org/record/3856637/files/Data.zip?download=1) or by visiting the [Zendo repository](https://zenodo.org/record/3856637) of the course. Unzip the Data.zip file and **place the ```Data``` folder at the very top of your Google Drive folder tree**. The latter is important to ensure that image import commands in the notebooks work as expected.
 
 In order to access Google Drive from Colab, you will need to connect to it from each notebook. For that, execute the following cell at the top of each notebook and follow instructions:
 
@@ -56,7 +56,7 @@ pip install trackpy
 In order to run this course on your own computer you will have to:
 
 1. Download this GitHub repository by using the "Clone or Download" button at the top right of this page.
-2. Download the dataset for the course either directly using [this link](https://zenodo.org/record/3786307/files/Data.zip?download=1) or by visiting the [Zendo repository](https://zenodo.org/record/3786307/#.XrEx4tP7RTY) of the course.
+2. Download the dataset for the course either directly using [this link](https://zenodo.org/record/3856637/files/Data.zip?download=1) or by visiting the [Zendo repository](https://zenodo.org/record/3856637) of the course.
 3. Adjust your folders so that the Data folder is at the same level as the folder containing the notebooks:
    ```
    Mainfolder
@@ -76,15 +76,15 @@ In order to run this course on your own computer you will have to:
    ```bash
    cd Mainfolder/neubias_academy_biapy/installation
    ```
-   2. Use the environment_minimal.yml file to install all packages in one go:
+   1. Use the environment_minimal.yml file to install all packages in one go:
    ```bash
    conda env create -f environment_minimal.yml
    ```
-   3. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Every time** you want to use it, open a terminal and start Jupyter:
+   1. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Every time** you want to use it, open a terminal and start Jupyter:
    ```bash
    conda activate biapy
    ```
-   4. To start a Jupyter session, activate your environment biapy (see 3.) and then start Jupyter:
+   1. To start a Jupyter session, activate your environment biapy (see 3.) and then start Jupyter:
    ```bash
    jupyter notebook
    ```

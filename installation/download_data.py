@@ -4,7 +4,7 @@ import requests
 
 # Direct download from Zenodo
 if not os.path.exists('Data/'):
-    url = 'https://zenodo.org/record/3786307/files/Data.zip?download=1'
+    url = 'https://zenodo.org/record/3856637/files/Data.zip?download=1'
     urllib.request.urlretrieve(url, 'Data.zip')
     #unzip
     with zipfile.ZipFile('Data.zip', 'r') as zip_ref:
