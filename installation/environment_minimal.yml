@@ -9,13 +9,18 @@ dependencies:
   - pandas
   - ipyvolume
   - pip
+  - jupyter
   - jupyter_contrib_nbextensions
   - ipywidgets
+  - pyjnius=1.2.0
   - pyimagej
   - openjdk=8
+  - plotnine
+  - seaborn
   - pip:
     - napari
     - trackpy
     - tqdm
     - mrc
     - aicsimageio
+    - xlrd

@@ -1,9 +1,22 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/guiwitz/neubias_academy_biapy/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/guiwitz/neubias_academy_biapy/b6f21462bcd4202749efaf69e45724196ba712c0)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/guiwitz/neubias_academy_biapy/blob/colab)
 
 # NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter
 
-This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this cours is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
+This course is an introduction to bioimage processing with Python and Jupyter. It is composed of a series of Jupyter notebooks that can be simply [read](https://nbviewer.jupyter.org/github/guiwitz/neubias_academy_biapy/tree/master/) or run interactively using either the [binder](#On-Binder) service, the [Google Colab](#On-Colab) service or via a [local installation](#Local-installation). The course covers basics, such as handling images as Numpy arrays, as well as a few more advanced topics such as tracking, registration etc. While some content presents fundamental concepts in image processing, this is *NOT* an image processing course. The goal of this course is to give people with image processing background (e.g. in Fiji) the opportunity to discover how image processing is done in the Python world. In particular this course is not *exhaustive* as it only covers *selected* topics.
+
+## Table of contents
+
+- [NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter](#neubias-academy-home-interactive-bioimage-analysis-with-python-and-jupyter)
+  - [Table of contents](#table-of-contents)
+  - [Static notebooks](#static-notebooks)
+  - [Running the notebooks interactively](#running-the-notebooks-interactively)
+    - [On Binder](#on-binder)
+    - [On Colab](#on-colab)
+    - [Local installation](#local-installation)
+  - [Additional technical information](#additional-technical-information)
+    - [Turning a Q&A into an image.sc post](#turning-a-qa-into-an-imagesc-post)
+    - [Automated conversion for Colab](#automated-conversion-for-colab)
 
 ## Static notebooks
 
@@ -67,7 +80,7 @@ In order to run this course on your own computer you will have to:
    ```bash
    conda env create -f environment_minimal.yml
    ```
-   3. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Everytime** you want to use it, open a terminal and start Jupyter:
+   3. Now you have a specific environment called biapy that has all packages (including Jupyter) installed. **Every time** you want to use it, open a terminal and start Jupyter:
    ```bash
    conda activate biapy
    ```
@@ -79,4 +92,13 @@ In order to run this course on your own computer you will have to:
 
 Note that this procedure installs all packages *except* for [13-ML_based_segmentation.ipynb](13-ML_based_segmentation.ipynb). That notebook requires [Cellpose](https://github.com/mouseland/cellpose) and [StarDist](https://github.com/mpicbg-csbd/stardist). As installation of these packages might depend on your local configuration, we do not include them in the default installation. Consult their documentation on how to install them if you want to explore that notebook.
 
+## Additional technical information
+
+### Turning a Q&A into an [image.sc](https://forum.image.sc/) post
+
+The questions and answers of the live NEUBIAS webinar were saved into a spreadsheet (see e.g [here](https://docs.google.com/spreadsheets/d/1aL77bMOsQeYoWBA8_jZx_mu13KeL_bgJHNVMOWPHHHA/edit?usp=sharing)) and exported as a CSV file. To generate the post that can be found [here](https://forum.image.sc/t/neubias-academy-home-webinar-interactive-bioimage-analysis-with-python-and-jupyter-questions-answers/37596), the CSV file was transformed into a Markdown document through the Jupyter notebook [questions_to_markdown.ipynb](utils/questions_to_markdown.ipynb). You can also run that notebook from Binder and upload your own CSV file to turn it into Markdown. Note that the image.sc forum markdown requires links to be html tags, simple Markdown links don't work.
+
+### Automated conversion for Colab
+
+There are a three main differences in the requirements to run notebooks on Binder or Colab: the path to data is different (as data are stored on Google Drive for Colab), the small course module ```course_function.py``` needs to be copied to Colab, and some packages need to be installed on Colab. The notebook [automate_colab_editing.ipynb](utils/automate_colab_editing.ipynb) automates the conversion from Binder to Colab: 1. It checks each notebook for package imports and adds a cell to install missing packages, 2. it checks for data imports, and changes the paths to Google Drive format, and 3. it adds a cell to download the course module. Each notebook is then reexported into another folder. Ideally that folder corresponds to a specific branch of the repository.
 
