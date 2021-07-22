@@ -1,5 +1,6 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/guiwitz/neubias_academy_biapy/636808e57605207be95cc1435b79c2a61110dee1)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/guiwitz/neubias_academy_biapy/blob/colab)
+[![DOI](https://zenodo.org/badge/261601095.svg)](https://zenodo.org/badge/latestdoi/261601095)
 
 # NEUBIAS Academy @HOME: Interactive Bioimage Analysis with Python and Jupyter
 
