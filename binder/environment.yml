@@ -1,8 +1,8 @@
-name: biapy
+name: biapy2021
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.8
   - numpy
   - matplotlib
   - scikit-image
@@ -12,14 +12,9 @@ dependencies:
   - voila
   - itkwidgets
   - jupyterlab
-  - nodejs
   - scikit-learn
-  - rise
-  - pyjnius=1.2.0
-  - jupyter_contrib_nbextensions
   - ipympl
   - ipywidgets
-  - numba>=0.43.1
   - pyimagej
   - openjdk=8
   - seaborn
@@ -27,7 +22,7 @@ dependencies:
   - pip:
     - napari
     - trackpy
-    - tensorflow==1.15
+    - tensorflow
     - tqdm
     - torch 
     - torchvision
