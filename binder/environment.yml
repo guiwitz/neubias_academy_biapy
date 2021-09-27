@@ -7,10 +7,7 @@ dependencies:
   - matplotlib
   - scikit-image
   - pandas
-  - ipyvolume
   - pip
-  - voila
-  - itkwidgets
   - jupyterlab
   - scikit-learn
   - ipympl
@@ -20,14 +17,10 @@ dependencies:
   - seaborn
   - plotnine 
   - pip:
-    - napari
+    - napari[all]
     - trackpy
-    - tensorflow
     - tqdm
-    - torch 
-    - torchvision
     - mrc
-    - stardist
     - cellpose
     - aicsimageio
     - xlrd
