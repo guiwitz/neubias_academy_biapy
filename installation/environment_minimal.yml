@@ -2,25 +2,22 @@ name: biapy
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.10
   - numpy
   - matplotlib
   - scikit-image
   - pandas
   - ipyvolume
   - pip
-  - jupyter
-  - jupyter_contrib_nbextensions
+  - jupyterlab
   - ipywidgets
-  - pyjnius=1.2.0
   - pyimagej
   - openjdk=8
   - plotnine
   - seaborn
+  - napari
   - pip:
-    - napari
     - trackpy
     - tqdm
     - mrc
     - aicsimageio
-    - xlrd
