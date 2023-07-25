@@ -23,12 +23,12 @@ def detect_nuclei(image, size = 200):
     """
     
     # filtering
-    image = skimage.filters.median(image,selem=np.ones((2,2)))
+    image = skimage.filters.median(image,footprint=np.ones((2,2)))
     # local thresholding
     image_local_threshold = skimage.filters.threshold_local(image,block_size=51)
     image_local = image > image_local_threshold
     # remove tiny features
-    image_local_open = skimage.morphology.binary_opening(image_local, selem=skimage.morphology.disk(2))
+    image_local_open = skimage.morphology.binary_opening(image_local, footprint=skimage.morphology.disk(2))
     # label image
     image_labeled = label(image_local_open)
     # analyze regions
